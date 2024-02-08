@@ -1,2 +1,2 @@
 # Backend_Project
-A project of backend for CoderHouse
+A back-end project for CoderHouse
