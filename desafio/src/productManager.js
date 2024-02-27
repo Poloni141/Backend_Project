@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 class ProductManager {
   constructor(file) {
@@ -50,9 +50,10 @@ class ProductManager {
   };
 
   getProductById = (id) => {
-    let searchProd = this.products.find((p) => p.id === id);
+    const products = this.getProducts();
+    let searchProd = products.find((p) => p.id === id);
     if (searchProd) {
-      console.log(searchProd);
+      return searchProd;
     } else {
       console.log('ID not found');
     }
@@ -84,7 +85,9 @@ class ProductManager {
   };
 }
 
-const store = new ProductManager('./products.json');
+export default ProductManager;
 
-store.updateProduct(1, 'title', 'Otro titulo');
-store.deleteProduct(2);
+// const store = new ProductManager('./products.json');
+
+// store.updateProduct(1, 'title', 'Otro titulo');
+// store.deleteProduct(2);

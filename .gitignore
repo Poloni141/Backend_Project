@@ -1,2 +1,3 @@
 test.js
-products.json
+/desafio/node_modules
+/desafio/package-lock.json

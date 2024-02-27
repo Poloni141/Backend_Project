@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Remera Premium Fox KAWI SS",
+    "description": "Este es un producto prueba",
+    "category": "Remera",
+    "price": 30,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "id": 1
+  },
+  {
+    "title": "Campera FOX PIT JACKET",
+    "description": "Este es un producto prueba",
+    "category": "Campera",
+    "price": 120,
+    "thumbnail": "Sin imagen",
+    "stock": 123,
+    "id": 2
+  },
+  {
+    "title": "Guantes Motocross FOX DIRTPAW CE",
+    "description": "Este es un producto prueba",
+    "category": "Guante",
+    "price": 70,
+    "thumbnail": "Sin imagen",
+    "stock": 50,
+    "id": 3
+  },
+  {
+    "title": "Pantalon Fox Essex Stretch",
+    "description": "Este es un producto prueba",
+    "category": "Pantalon",
+    "price": 100,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "id": 4
+  },
+  {
+    "title": "Campera FOX FLEXAIR Water",
+    "description": "Este es un producto prueba",
+    "category": "Campera",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 15,
+    "id": 5
+  }
+]
