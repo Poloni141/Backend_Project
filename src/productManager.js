@@ -22,6 +22,7 @@ class ProductManager {
         price,
         thumbnail,
         stock,
+        status: true,
         id: 0,
       };
 

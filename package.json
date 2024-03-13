@@ -1,5 +1,6 @@
 {
   "name": "backend_project",
+  "type": "module",
   "version": "1.0.0",
   "description": "A back-end project for CoderHouse",
   "main": "index.js",
