@@ -1,1 +1,88 @@
-[{"title":"nuevo nombre","description":"Este es un producto prueba","category":"Remera","price":30,"thumbnail":"Sin imagen","stock":200,"status":true,"id":1},{"title":"Campera FOX PIT JACKET","description":"Este es un producto prueba","category":"Campera","price":120,"thumbnail":"Sin imagen","stock":123,"status":true,"id":2},{"title":"Guantes Motocross FOX DIRTPAW CE","description":"Este es un producto prueba","category":"Guante","price":70,"thumbnail":"Sin imagen","stock":50,"status":true,"id":3},{"title":"Pantalon Fox Essex Stretch","description":"Este es un producto prueba","category":"Pantalon","price":100,"thumbnail":"Sin imagen","stock":200,"status":true,"id":4},{"title":"Campera FOX FLEXAIR Water","description":"Este es un producto prueba","category":"Campera","price":200,"thumbnail":"Sin imagen","stock":15,"status":true,"id":5},{"title":"test prod","description":"Este es un producto prueba","price":30,"thumbnail":"Sin imagen","stock":200,"status":true,"id":6},{"title":"test prod","description":"Este es un producto prueba","price":30,"thumbnail":"Sin imagen","stock":200,"status":true,"id":7},{"title":"test prod","description":"Este es un producto prueba","price":30,"thumbnail":"Sin imagen","stock":200,"status":true,"id":8},{"title":"otro prod","description":"Este es un producto prueba","price":30,"thumbnail":"Sin imagen","stock":200,"status":true,"id":9},{"title":"otro prod","description":"Este es un producto prueba","price":30,"thumbnail":"Sin imagen","stock":200,"status":true,"id":10}]
+[
+  {
+    "title": "new titleeeeeee",
+    "description": "Este es un producto prueba",
+    "category": "Remera",
+    "price": 30,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "status": true,
+    "id": 1
+  },
+  {
+    "title": "Campera FOX PIT JACKET",
+    "description": "Este es un producto prueba",
+    "category": "Campera",
+    "price": 120,
+    "thumbnail": "Sin imagen",
+    "stock": 123,
+    "status": true,
+    "id": 2
+  },
+  {
+    "title": "Guantes Motocross FOX DIRTPAW CE",
+    "description": "Este es un producto prueba",
+    "category": "Guante",
+    "price": 70,
+    "thumbnail": "Sin imagen",
+    "stock": 50,
+    "status": true,
+    "id": 3
+  },
+  {
+    "title": "Pantalon Fox Essex Stretch",
+    "description": "Este es un producto prueba",
+    "category": "Pantalon",
+    "price": 100,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "status": true,
+    "id": 4
+  },
+  {
+    "title": "Campera FOX FLEXAIR Water",
+    "description": "Este es un producto prueba",
+    "category": "Campera",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "stock": 15,
+    "status": true,
+    "id": 5
+  },
+  {
+    "title": "test prod",
+    "description": "Este es un producto prueba",
+    "price": 30,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "status": true,
+    "id": 6
+  },
+  {
+    "title": "test prod",
+    "description": "Este es un producto prueba",
+    "price": 30,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "status": true,
+    "id": 7
+  },
+  {
+    "title": "test prod",
+    "description": "Este es un producto prueba",
+    "price": 30,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "status": true,
+    "id": 8
+  },
+  {
+    "title": "otro prod",
+    "description": "Este es un producto prueba",
+    "price": 30,
+    "thumbnail": "Sin imagen",
+    "stock": 200,
+    "status": true,
+    "id": 9
+  }
+]

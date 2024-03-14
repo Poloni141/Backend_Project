@@ -74,7 +74,7 @@ class ProductManager {
   deleteProduct = (id) => {
     let products = this.getProducts();
     let deleteObj = products.findIndex((obj) => obj.id === id);
-    if (deleteObj > -1) {
+    if (deleteObj !== -1) {
       products.splice(deleteObj, 1);
     }
 
