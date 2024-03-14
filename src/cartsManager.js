@@ -20,6 +20,16 @@ class CartsManager {
     }
   };
 
+  getCartProducts = (id) => {
+    const selectedCart = this.getCartById(id);
+    if (selectedCart) {
+      return selectedCart.products;
+    } else {
+      console.log('ID not found');
+      return;
+    }
+  };
+
   addCart = () => {
     const allCarts = this.getCarts();
 
@@ -48,49 +58,37 @@ class CartsManager {
   };
 
   addProductToCart = (cid, pid) => {
+    const allCarts = this.getCarts();
     const selectedCart = this.getCartById(cid);
     const selectedProd = productManager.getProductById(pid);
     if (!selectedCart || !selectedProd) {
       console.log('Error: Carrito o producto no encontrado.');
       return;
     }
+
+    const productExist = selectedCart.products.find((prod) => prod.id === pid);
+    if (productExist) {
+      productExist.quantity += 1;
+      console.log('Producto agregado');
+    } else {
+      selectedCart.products.push({ id: pid, quantity: 1 });
+      console.log('Producto agregado');
+    }
+
+    const updatedCarts = allCarts.map((cart) => {
+      if (cart.id === selectedCart.id) {
+        return selectedCart;
+      } else {
+        return cart;
+      }
+    });
+
+    fs.writeFileSync(this.file, JSON.stringify(updatedCarts), 'utf-8');
   };
-
-  //   addProductToCart = (cid, pid) => {
-  //     const allCarts = this.getCarts();
-  //     const selectedCart = this.getCartById(cid);
-  //     const selectedProd = productManager.getProductById(pid);
-  //     if (!selectedCart || !selectedProd) {
-  //       console.log('Error: Carrito o producto no encontrado.');
-  //       return;
-  //     }
-
-  //     const productExist = selectedCart.products.find((prod) => prod.id === pid);
-  //     if (productExist) {
-  //       productExist.quantity += 1;
-  //       return console.log('Producto agregado');
-  //     } else {
-  //       selectedCart.products.push({ id: pid, quantity: 1 });
-  //       console.log('Producto agregado');
-  //     }
-
-  //     const updatedCarts = allCarts.map((cart) => {
-  //       if (cart.id === selectedCart.id) {
-  //         return selectedCart;
-  //       } else {
-  //         return cart;
-  //       }
-  //     });
-
-  //     fs.writeFileSync(this.file, JSON.stringify(updatedCarts), 'utf-8');
-
-  //     // console.log(selectedCart);
-  //     // console.log(selectedProd);
-  //   };
 }
 
-const store = new CartsManager('./carts.json');
-store.addProductToCart(1, 2);
+// const store = new CartsManager('./carts.json');
+// store.getCartProducts(1);
 // store.addCart();
 // store.getCartById(3);
 
